@@ -2,10 +2,7 @@ body {
 	margin: 0;
 }
 
-img {
-	width: 100%;
-	height: auto;
-}
+/* HEADER */
 
 header {
 	height: 100px;
@@ -19,6 +16,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: black 0.5px solid;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 .logoSlogan {
@@ -57,12 +59,24 @@ nav {
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+/* SECTION */
+
+section {
+	background: linear-gradient(
+		0deg, 
+		rgba(250, 152, 54, 0.87) 0%, 
+		rgb(255, 255, 255) 100%
+	);
+}
+
+/* SECTION ACCUEIL */
 
 .carousel {
 	width: 100%;
 	/* max-width: 1000px; */
 	height: 100%;
 }
+
 figure {
 	position: relative;
 	width: 400%;
@@ -117,8 +131,56 @@ figure {
 	}
 }
 
+/* SECTION A VISITER */
 
+.section_lieux {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+	padding-top: 1%;
+}
 
+.lieux_container {
+	width: 98%;
+	padding: 1%;
+	padding-top: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.lieux_img_left {
+	border-radius:  0 100px / 120px;
+}
+
+.lieux_img_right {
+	border-radius: 120px / 100px 0;
+}
+
+.lieux_titre_left {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    left: 2%;
+    top: 2%;
+    color: white;
+	padding: 2% 2% 2% 2%;
+}
+
+.lieux_titre_right {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: 2%;
+    top: 2%;
+    color: white;
+	padding: 2% 2% 2% 2%;
+}
+
+h1 {
+	margin: 0;
+}
 
 /* FOOTER */
 
