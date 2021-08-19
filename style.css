@@ -150,10 +150,12 @@ figure {
 
 .lieux_img_left {
 	border-radius:  0 100px / 120px;
+	border: 1px solid #000;
 }
 
 .lieux_img_right {
 	border-radius: 120px / 100px 0;
+	border: 1px solid #000;
 }
 
 .lieux_titre_left {
