@@ -1,133 +1,173 @@
 body {
-  margin: 0;
+	margin: 0;
 }
 
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 header {
-  height: 100px;
-  width: 100%;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(204, 204, 204, 1) 100%
-  );
-  display: flex;
-  justify-content: space-between;
-  border-bottom: black 0.5px solid;
+	height: 100px;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(204, 204, 204, 1) 100%
+	);
+	display: flex;
+	justify-content: space-between;
+	border-bottom: black 0.5px solid;
 }
 
 .logoSlogan {
-  height: 100%;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  padding-left: 2%;
+	height: 100%;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  padding-right: 2%;
+	display: flex;
+	align-items: center;
+	padding-right: 2%;
 }
 
 .menu {
-  list-style: none;
-  display: flex;
+	list-style: none;
+	display: flex;
 }
 
 .separateur {
-  border-right: black 1px solid;
+	border-right: black 1px solid;
 }
 
 .lienNav {
-  font-size: 25px;
-  padding: 0 10px;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
+	font-size: 25px;
+	padding: 0 10px;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .lienNav:hover {
-  color: #66ccff;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+	color: #66ccff;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
-.carousel {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+/* FOOTER */
+
+footer {
+	width: 100%;
+	height: 100px;
+	background: radial-gradient(
+		circle, 
+		rgba(119,119,119,1) 0%, 
+		rgba(51,51,51,1) 100%
+	);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #000;
 }
 
-figure {
-  position: relative;
-  width: 400%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-  animation: 10s slidy infinite;
+/* SOCIAL */
+
+.social {
+	text-align: center;
 }
 
-.carouselImg {
-  width: 25%;
-  float: left;
+.social > a {
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin: 0 8px;
+	opacity: 0.9;
 }
 
-/* @keyframes slidy {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
-} */
-@keyframes slidy {
-  0% {
-    left: 0%;
-  }
-  25% {
-    left: 0%;
-  }
-  30% {
-    left: -100%;
-  }
-  55% {
-    left: -100%;
-  }
-  60% {
-    left: -200%;
-  }
-  85% {
-    left: -200%;
-  }
-  90% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
+.social > a:hover {
+	opacity: 1;
+}
+
+.facebook {
+	border: 1px solid #3b5998;
+	background: #ffffff;
+	color: #3b5998;
+}
+
+.facebook:hover {
+	background: #3b5998;
+	color: #ffffff;
+}
+
+.twitter {
+	border: 1px solid #00acee;
+	background: #ffffff;
+	color: #00acee;
+}
+
+.twitter:hover {
+	background: #00acee;
+	color: #ffffff;
+}
+
+.instagram {
+	border: 1px solid #000;
+	background: #ffffff;
+	color: #000;
+}
+
+footer .fa-instagram {
+	color: transparent;
+	background: radial-gradient(
+		circle at 30% 107%, 
+		#fdf497 0%, 
+		#fdf497 5%,
+		#fd5949 45%, 
+		#d6249f 60%,
+		#285AEB 90%
+	);
+	background: -webkit-radial-gradient(
+		circle at 30% 107%, 
+		#fdf497 0%, 
+		#fdf497 5%, 
+		#fd5949 45%, 
+		#d6249f 60%, 
+		#285AEB 90%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+} 
+
+.instagram:hover {
+	background: radial-gradient(
+		circle at 30% 107%, 
+		#fdf497 0%, 
+		#fdf497 5%, 
+		#fd5949 45%,
+		#d6249f 60%,
+		#285AEB 90%
+	);
+	color: #ffffff;
+}
+
+footer .instagram:hover .fa-instagram { 
+	color: #ffffff;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+	text-align:center;
+	margin-bottom:0;
+	color: white;
 }
