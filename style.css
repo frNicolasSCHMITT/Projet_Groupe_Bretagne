@@ -188,7 +188,7 @@ footer {
     color: #000;
 }
 
-.fa-instagram {
+footer .fa-instagram {
     color: transparent;
     background: radial-gradient(
         circle at 30% 107%, 
@@ -222,7 +222,7 @@ footer {
     color: #ffffff;
 }
 
-.instagram:hover .fa-instagram { 
+footer .instagram:hover .fa-instagram { 
     color: #ffffff;
 }
 
