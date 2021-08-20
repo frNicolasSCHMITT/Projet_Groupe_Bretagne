@@ -1,0 +1,52 @@
+/* SECTION A VISITER */
+
+.section_lieux {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
+	padding-top: 1%;
+}
+
+.lieux_container {
+	width: 98%;
+	padding: 1%;
+	padding-top: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.lieux_img_left {
+	border-radius:  0 100px / 120px;
+	border: 1px solid #000;
+}
+
+.lieux_img_right {
+	border-radius: 120px / 100px 0;
+	border: 1px solid #000;
+}
+
+.lieux_titre_left {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    left: 2%;
+    top: 2%;
+    color: white;
+	padding: 2% 2% 2% 2%;
+}
+
+.lieux_titre_right {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: 2%;
+    top: 2%;
+    color: white;
+	padding: 2% 2% 2% 2%;
+}
+
+h1 {
+	margin: 0;
+}
