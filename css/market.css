@@ -14,10 +14,12 @@
 }
 
 .market_img_left {
+	border-radius: 120px / 100px 0;
 	border: 1px solid #000;
 }
 
 .market_img_right {
+	border-radius:  0 100px / 120px;
 	border: 1px solid #000;
 }
 
@@ -31,6 +33,11 @@
     bottom: 3%;
     color: white;
 	padding: 0 2%;
+	text-shadow: 
+		-1px -1px 0 #000, 
+		1px -1px 0 #000, 
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .market_titre_right {
@@ -43,9 +50,17 @@
     bottom: 3%;
     color: white;
 	padding: 0 2%;
-
+	text-shadow: 
+		-1px -1px 0 #000, 
+		1px -1px 0 #000, 
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .horaires {
 	display: none;
+}
+
+.market_container:hover .horaires {
+	display: block;
 }
