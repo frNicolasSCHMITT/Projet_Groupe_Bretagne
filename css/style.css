@@ -54,8 +54,20 @@ nav {
 
 .lienNav:hover {
 	color: #66ccff;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+	text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000, 
+		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+/* SECTION */
+
+section {
+	background: linear-gradient(
+		0deg, 
+		rgba(250, 152, 54, 0.87) 0%, 
+		rgb(255, 255, 255) 100%
+	);
 }
 
 /* FOOTER */
