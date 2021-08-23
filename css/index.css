@@ -136,11 +136,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(
-    0deg,
-    rgba(250, 152, 54, 0.87) 0%,
-    rgb(255, 255, 255) 100%
-  );
 }
 
 .titreInfoGenerales {
