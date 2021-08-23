@@ -60,16 +60,6 @@ nav {
 		1px 1px 0 #000;
 }
 
-/* SECTION */
-
-section {
-	background: linear-gradient(
-		0deg, 
-		#fa9836de 0%, 
-		#ffffff 100%
-	);
-}
-
 /* FOOTER */
 
 footer {
