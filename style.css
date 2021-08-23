@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black 0.5px solid;
+}
+
+.logoSlogan {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.separateur {
+  border-right: black 1px solid;
+}
+
+.lienNav {
+  font-size: 25px;
+  padding: 0 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lienNav:hover {
+  color: #66ccff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/*carousel accueil*/
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+  transition: 2s;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100%;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 100vw;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: blue;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+
+/*Informations générales acceuil*/
+
+.infosGenerales {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 152, 54, 0.87) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.titreInfoGenerales {
+  font-size: 35px;
+}
+
+.histoire {
+  margin-top: 3%;
+  padding: 1%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px #66ccff;
+  border-radius: 10%;
+  background-color: #f0f0f0;
+}
+
+.geographie {
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 1%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px #66ccff;
+  border-radius: 10%;
+  background-color: #f0f0f0;
+}
+
+.climat {
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 1%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px #66ccff;
+  border-radius: 10%;
+  background-color: #f0f0f0;
+}
