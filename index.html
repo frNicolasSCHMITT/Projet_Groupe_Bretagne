@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/png" href="./img/logo/favicon.png" />
@@ -15,16 +16,18 @@
   </head>
   <body>
     <header>
-      <div class="logoSlogan">
-        <img src="./img/logo/logo_slogan.PNG" alt="" />
-      </div>
       <nav>
-        <ol class="menu">
-          <li><a class="lienNav separateur" href="#">Acceuil</a></li>
-          <li><a class="lienNav separateur" href="#">A Visiter</a></li>
-          <li><a class="lienNav separateur" href="#">Marchés</a></li>
-          <li><a class="lienNav" href="#">Actualités</a></li>
-        </ol>
+        <div class="logoSlogan">
+          <img src="./img/logo/logo_slogan.PNG" alt="" />
+        </div>
+        <div class="menuNav">
+          <ol class="menu">
+            <li><a class="lienNav separateur" href="#">Acceuil</a></li>
+            <li><a class="lienNav separateur" href="#">A Visiter</a></li>
+            <li><a class="lienNav separateur" href="#">Marchés</a></li>
+            <li><a class="lienNav" href="#">Actualités</a></li>
+          </ol>
+        </div>
       </nav>
     </header>
       <!-- image slider start -->
@@ -61,7 +64,8 @@
         <!-- manuel navigation end -->
         <!-- informations générales -->
         <section class="infosGenerales">
-          <div class="histoire">
+          <div class="histoire" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
             <h2 class="titreInfoGenerales">Histoire</h2>
             <p>	L'histoire de la Bretagne commence dès le néolithique, vers 5000 av J-C, marquée par le développement d'un mégalithisme important comme manifesté dans les sites du Cairn de Barnenez, Cairn de Gavrinis et les célèbres alignements de Carnac.
 
@@ -73,7 +77,7 @@
             </p>
           </div>
           <div>
-              <div class="geographie">
+              <div class="geographie" data-aos="fade-right">
                 <h2 class="titreInfoGenerales">Géographie</h2>
                 <p>
                 La Bretagne est une péninsule se trouvant à l'est de la France. Avec son littoral très découpé, elle possède la plus grande façade maritime de la Métropole, s'étendant de la Manche au Nord jusu'au golfe de Gascogne de l'océan Atlantique, avec 797 îles et îlots dont la plus grande est Belle-Ile-en-Mer dans le prolongement de la presqu'île de Quiberon.
@@ -81,7 +85,7 @@
                 Le relief de la Bretagne est marqué par le Massif Armoricain avec ses deux lignes de crêtes de direction est-ouest : les monts d'Arrée et les montagnes Noires.
                 </p>
               </div>
-              <div class="climat">
+              <div class="climat" data-aos="fade-right">
                 <h2 class="titreInfoGenerales">Climat</h2>
                 <p>
                 La Bretagne bénéficie d'un climat océanique tempéré. En moyenne, la température approche 20 à 25°C en été et descend parfois en dessous de zéro l'hiver, avec 10 à 30 jours de gel par an. Les vents, fréquents et souvent forts, sont surtout orienté sud-ouest ou nord-est.
@@ -97,6 +101,9 @@
           </div>
           <p class="copyright"> &copy; Copyright 2021-2021 - Tout droits réservés.</p>
         </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>
+
+
