@@ -7,14 +7,6 @@ img {
   height: auto;
 }
 
-header {
-  z-index: 1;
-}
-
-.aos-fix[data-aos][data-aos].aos-animate {
-  transform: unset;
-}
-
 /*carousel accueil*/
 
 .slider {
