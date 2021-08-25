@@ -3,6 +3,11 @@ body {
   padding: 0;
   width: 100%;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* HEADER + NAV */
 header {
   width: 100%;
@@ -264,8 +269,4 @@ footer .instagram:hover .fa-instagram {
   text-align: center;
   margin-bottom: 0;
   color: white;
-}
-
-section {
-  height: 300vh;
 }
