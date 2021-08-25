@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 /* RESPONSIVE NAV TABLETTE */
 
-@media (max-width: 1040px) {
+@media (max-width: 1078px) {
   .hamburg {
     display: block;
     height: 100px;
@@ -121,7 +121,7 @@ nav ul li a:hover {
 }
 /* RESPONSIVE NAV MOBILE */
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   header {
     height: 50px;
   }
