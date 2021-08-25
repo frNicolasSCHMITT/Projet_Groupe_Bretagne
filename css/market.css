@@ -1,66 +1,67 @@
 .section_market {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 33.33% 33.33% 33.33%;
-	padding: 0.5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0.5%;
 }
 
 .market_container {
-	width: 98%;
-	padding: 0.5%;
-	padding-bottom: 0;
-	display: inline-block;
-	position: relative;
+  width: 98%;
+  padding: 0.5%;
+  padding-bottom: 0;
+  display: inline-block;
+  position: relative;
 }
 
 .market_img_left {
-	border-radius: 120px / 100px 0;
-	border: 1px solid #000;
+  border-radius: 20% / 30% 0;
+  border: 1px solid #000;
 }
 
 .market_img_right {
-	border-radius:  0 100px / 120px;
-	border: 1px solid #000;
+  border-radius: 0 20% / 30%;
+  border: 1px solid #000;
 }
 
 .market_titre_left {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 50px 0;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    left: 2%;
-    bottom: 3%;
-    color: white;
-	padding: 0 2%;
-	text-shadow: 
-		-1px -1px 0 #000, 
-		1px -1px 0 #000, 
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px 0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  left: 2%;
+  bottom: 3%;
+  color: white;
+  padding: 0 2%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .market_titre_right {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 0 50px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    right: 2%;
-    bottom: 3%;
-    color: white;
-	padding: 0 2%;
-	text-shadow: 
-		-1px -1px 0 #000, 
-		1px -1px 0 #000, 
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 50px;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  right: 2%;
+  bottom: 3%;
+  color: white;
+  padding: 0 2%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .horaires {
-	display: none;
+  display: none;
 }
 
 .market_container:hover .horaires {
-	display: block;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .section_market {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0.5%;
+  }
 }
