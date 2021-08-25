@@ -34,7 +34,7 @@ h1 {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  border-radius: 0 120px / 100px;
+  border-radius: 0 20% / 30%;
   border: 1px solid black;
 }
 
@@ -47,7 +47,7 @@ h1 {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  border-radius: 120px / 100px 0;
+  border-radius: 20% / 30% 0;
   border: 1px solid black;
 }
 
