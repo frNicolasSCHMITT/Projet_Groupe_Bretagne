@@ -1,71 +1,90 @@
 h1 {
-	text-align: center;
-	font-size: 32px;
+  text-align: center;
+  font-size: 3.5vh;
 }
 
 h2 {
-	text-align: center;
-	font-size: 21px;
+  text-align: center;
+  font-size: 2.5vh;
 }
 
 h3 {
-	font-size: 18px;
-	padding-top: 2.5%;
+  font-size: 2vh;
+  padding-top: 2.5%;
 }
 
 p {
-	font-size: 16px;
+  font-size: 2vh;
 }
 
 .section_actuality {
-	padding: 0 5% ;
-}
-
-.separateur_actuality {
-	border-bottom: 1px solid gray;
-}
-
-.actuality_container_top {
-	padding-bottom: 5%;
+  padding: 0 5%;
 }
 
 .actuality_container {
-	padding-top: 5%;
-	padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .actuality_container_img {
-	text-align: center;
+  text-align: center;
 }
 
 .actuality_img {
-	width: 50%;
-	border: 1px solid black;
-	border-radius: 25px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
 figcaption {
-	text-align: center;
-	font-size: 14px;
-	color: gray;
-}
-
-blockquote {
-	width: 75%;
-	margin: 2.5%;
-	padding: 0 0.5% 0 5%;
-	border-left: 4px solid goldenrod;
-	background-color: #f5f5f5;
-}
-
-blockquote > p {
-	font-size: 21px;
-}
-
-.credit_quote {
-	font-size: 14px;
+  text-align: center;
+  font-size: 1.4vh;
+  color: gray;
 }
 
 .articles {
-	padding-top: 5%;
+  padding-top: 5%;
+}
+
+blockquote {
+  width: 75%;
+  margin: 2.5%;
+  padding: 0 0.5% 0 5%;
+  border-left: 4px solid goldenrod;
+  background-color: #f5f5f5;
+}
+
+blockquote > p {
+  font-size: 2.4vh;
+}
+
+.credit_quote {
+  font-size: 1.6vh;
+}
+
+hr.style-eight {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+hr.style-eight:after {
+  content: "ᛒᚱᛖᛏᛟᚾ";
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .actuality_container {
+    padding-bottom: 5%;
+  }
+  .actuality_img {
+    width: 100%;
+  }
 }
