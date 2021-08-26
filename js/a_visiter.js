@@ -82,21 +82,39 @@ const imgZoom10 = document.querySelector(".img_zoom10");
 
 const TLANIM1 = gsap.timeline({ paused: true });
 
-TLANIM1.fromTo(
-  imgZoom1,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: 100,
-    x: 300,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentLeft1, { left: 280, duration: 0.5 }, 0.5)
-  .from(titleLeft1, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationLeft1, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtLeft1, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM1.fromTo(
+    imgZoom1,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 50,
+      x: 145,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft1, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft1, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft1, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft1, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM1.fromTo(
+    imgZoom1,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 100,
+      x: 300,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft1, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft1, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft1, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft1, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardLeft1.addEventListener("mouseenter", () => {
   TLANIM1.play();
@@ -110,21 +128,39 @@ cardLeft1.addEventListener("mouseleave", () => {
 
 const TLANIM2 = gsap.timeline({ paused: true });
 
-TLANIM2.fromTo(
-  imgZoom2,
-  { scale: 1 },
-  {
-    scale: 1.5,
-    y: 50,
-    x: -150,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
-  }
-)
-  .to(blockContentRight2, { right: 280, duration: 0.5 }, 0.5)
-  .from(titleRight2, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationRight2, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtRight2, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM2.fromTo(
+    imgZoom2,
+    { scale: 1 },
+    {
+      scale: 1.5,
+      y: 0,
+      x: -50,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight2, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight2, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight2, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight2, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM2.fromTo(
+    imgZoom2,
+    { scale: 1 },
+    {
+      scale: 1.5,
+      y: 50,
+      x: -150,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight2, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight2, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight2, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight2, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardRight2.addEventListener("mouseenter", () => {
   TLANIM2.play();
@@ -138,21 +174,39 @@ cardRight2.addEventListener("mouseleave", () => {
 
 const TLANIM3 = gsap.timeline({ paused: true });
 
-TLANIM3.fromTo(
-  imgZoom3,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: -50,
-    x: 0,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentLeft3, { left: 280, duration: 0.5 }, 0.5)
-  .from(titleLeft3, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationLeft3, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtLeft3, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM3.fromTo(
+    imgZoom3,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: -50,
+      x: 0,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft3, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft3, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft3, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft3, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM3.fromTo(
+    imgZoom3,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: -50,
+      x: 0,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft3, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft3, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft3, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft3, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardLeft3.addEventListener("mouseenter", () => {
   TLANIM3.play();
@@ -166,21 +220,39 @@ cardLeft3.addEventListener("mouseleave", () => {
 
 const TLANIM4 = gsap.timeline({ paused: true });
 
-TLANIM4.fromTo(
-  imgZoom4,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: 100,
-    x: -100,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentRight4, { right: 280, duration: 0.5 }, 0.5)
-  .from(titleRight4, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationRight4, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtRight4, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM4.fromTo(
+    imgZoom4,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 50,
+      x: -70,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight4, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight4, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight4, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight4, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM4.fromTo(
+    imgZoom4,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 100,
+      x: -100,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight4, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight4, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight4, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight4, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardRight4.addEventListener("mouseenter", () => {
   TLANIM4.play();
@@ -194,21 +266,39 @@ cardRight4.addEventListener("mouseleave", () => {
 
 const TLANIM5 = gsap.timeline({ paused: true });
 
-TLANIM5.fromTo(
-  imgZoom5,
-  { scale: 1 },
-  {
-    scale: 1.5,
-    y: 0,
-    x: 150,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
-  }
-)
-  .to(blockContentLeft5, { left: 280, duration: 0.5 }, 0.5)
-  .from(titleLeft5, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationLeft5, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtLeft5, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM5.fromTo(
+    imgZoom5,
+    { scale: 1 },
+    {
+      scale: 1.5,
+      y: 0,
+      x: 50,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft5, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft5, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft5, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft5, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM5.fromTo(
+    imgZoom5,
+    { scale: 1 },
+    {
+      scale: 1.5,
+      y: 0,
+      x: 150,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft5, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft5, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft5, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft5, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardLeft5.addEventListener("mouseenter", () => {
   TLANIM5.play();
@@ -222,21 +312,39 @@ cardLeft5.addEventListener("mouseleave", () => {
 
 const TLANIM6 = gsap.timeline({ paused: true });
 
-TLANIM6.fromTo(
-  imgZoom6,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: 100,
-    x: -50,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentRight6, { right: 280, duration: 0.5 }, 0.5)
-  .from(titleRight6, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationRight6, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtRight6, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM6.fromTo(
+    imgZoom6,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 50,
+      x: -40,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight6, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight6, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight6, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight6, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM6.fromTo(
+    imgZoom6,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 100,
+      x: -50,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight6, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight6, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight6, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight6, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardRight6.addEventListener("mouseenter", () => {
   TLANIM6.play();
@@ -250,21 +358,39 @@ cardRight6.addEventListener("mouseleave", () => {
 
 const TLANIM7 = gsap.timeline({ paused: true });
 
-TLANIM7.fromTo(
-  imgZoom7,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: 200,
-    x: 450,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentLeft7, { left: 280, duration: 0.5 }, 0.5)
-  .from(titleLeft7, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationLeft7, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtLeft7, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM7.fromTo(
+    imgZoom7,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 65,
+      x: 145,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft7, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft7, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft7, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft7, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM7.fromTo(
+    imgZoom7,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 150,
+      x: 300,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft7, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft7, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft7, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft7, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardLeft7.addEventListener("mouseenter", () => {
   TLANIM7.play();
@@ -278,21 +404,39 @@ cardLeft7.addEventListener("mouseleave", () => {
 
 const TLANIM8 = gsap.timeline({ paused: true });
 
-TLANIM8.fromTo(
-  imgZoom8,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: -150,
-    x: -100,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentRight8, { right: 280, duration: 0.5 }, 0.5)
-  .from(titleRight8, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationRight8, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtRight8, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM8.fromTo(
+    imgZoom8,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: -80,
+      x: -50,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight8, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight8, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight8, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight8, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM8.fromTo(
+    imgZoom8,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: -150,
+      x: -100,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight8, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight8, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight8, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight8, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardRight8.addEventListener("mouseenter", () => {
   TLANIM8.play();
@@ -306,21 +450,39 @@ cardRight8.addEventListener("mouseleave", () => {
 
 const TLANIM9 = gsap.timeline({ paused: true });
 
-TLANIM9.fromTo(
-  imgZoom9,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: 0,
-    x: 150,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentLeft9, { left: 280, duration: 0.5 }, 0.5)
-  .from(titleLeft9, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationLeft9, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtLeft9, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM9.fromTo(
+    imgZoom9,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 0,
+      x: 60,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft9, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft9, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft9, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft9, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM9.fromTo(
+    imgZoom9,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 0,
+      x: 150,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentLeft9, { left: 280, duration: 0.5 }, 0.5)
+    .from(titleLeft9, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationLeft9, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtLeft9, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardLeft9.addEventListener("mouseenter", () => {
   TLANIM9.play();
@@ -334,21 +496,39 @@ cardLeft9.addEventListener("mouseleave", () => {
 
 const TLANIM10 = gsap.timeline({ paused: true });
 
-TLANIM10.fromTo(
-  imgZoom10,
-  { scale: 1 },
-  {
-    scale: 2,
-    y: 0,
-    x: -150,
-    duration: 0.4,
-    ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
-  }
-)
-  .to(blockContentRight10, { right: 280, duration: 0.5 }, 0.5)
-  .from(titleRight10, { opacity: 0, duration: 0.5 }, "-=0.1")
-  .from(separationRight10, { opacity: 0, duration: 1 }, "-=0.2")
-  .from(allTxtRight10, { opacity: 0, duration: 0.3, stagger: 0.2 });
+if ($(window).width() < 768) {
+  TLANIM10.fromTo(
+    imgZoom10,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 0,
+      x: -150,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight10, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight10, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight10, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight10, { opacity: 0, duration: 0.3, stagger: 0.2 });
+} else {
+  TLANIM10.fromTo(
+    imgZoom10,
+    { scale: 1 },
+    {
+      scale: 2,
+      y: 0,
+      x: -150,
+      duration: 0.4,
+      ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
+    }
+  )
+    .to(blockContentRight10, { right: 280, duration: 0.5 }, 0.5)
+    .from(titleRight10, { opacity: 0, duration: 0.5 }, "-=0.1")
+    .from(separationRight10, { opacity: 0, duration: 1 }, "-=0.2")
+    .from(allTxtRight10, { opacity: 0, duration: 0.3, stagger: 0.2 });
+}
 
 cardRight10.addEventListener("mouseenter", () => {
   TLANIM10.play();
