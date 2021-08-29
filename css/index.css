@@ -113,6 +113,7 @@ img {
 }
 .climatGeo {
   z-index: -1;
+  display: flex;
 }
 .geographie {
   margin-top: 3%;
@@ -168,4 +169,63 @@ img {
     margin: 3% 0;
     width: 80%;
   }
+}
+
+/* MAPS */
+
+/* map France */
+
+.map {
+  width: 40%;
+  /* height: 600px; */
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#FR-BRE /*region bretagne*/ {
+  fill: #00b3b3;
+}
+
+.map svg {
+  fill: white;
+  stroke: #333333;
+  stroke-width: 1px;
+}
+
+/* map Bretagne */
+
+.mapBretagne {
+  display: none;
+}
+
+.bretagne {
+  width: 40%;
+  height: 500px;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #cce6ff; */
+  stroke: #333333;
+}
+.ancienDpt {
+  fill: #d9d9d9;
+}
+
+.dptActuel {
+  fill: grey;
+}
+
+.dptActuel:hover {
+  fill: #66ccff;
+}
+
+text {
+  font-size: 16px;
+  fill: #66ccff;
+  stroke: black;
+  stroke-width: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
 }
