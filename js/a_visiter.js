@@ -22,6 +22,17 @@ const blockContentRight10 = document.querySelector(
   ".block_content_show_right10"
 );
 
+const titreVisiteLeft1 = document.querySelector(".titre_visite_left1");
+const titreVisiteRight2 = document.querySelector(".titre_visite_right2");
+const titreVisiteLeft3 = document.querySelector(".titre_visite_left3");
+const titreVisiteRight4 = document.querySelector(".titre_visite_right4");
+const titreVisiteLeft5 = document.querySelector(".titre_visite_left5");
+const titreVisiteRight6 = document.querySelector(".titre_visite_right6");
+const titreVisiteLeft7 = document.querySelector(".titre_visite_left7");
+const titreVisiteRight8 = document.querySelector(".titre_visite_right8");
+const titreVisiteLeft9 = document.querySelector(".titre_visite_left9");
+const titreVisiteRight10 = document.querySelector(".titre_visite_right10");
+
 const titleLeft1 = document.querySelector(".block_content_show_left1 h2");
 const titleRight2 = document.querySelector(".block_content_show_right2 h2");
 const titleLeft3 = document.querySelector(".block_content_show_left3 h2");
@@ -82,7 +93,7 @@ const imgZoom10 = document.querySelector(".img_zoom10");
 
 const TLANIM1 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM1.fromTo(
     imgZoom1,
     { scale: 1 },
@@ -94,7 +105,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft1, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft1, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft1, { opacity: 1 })
     .from(titleLeft1, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft1, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft1, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -110,7 +122,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft1, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft1, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft1, { opacity: 1 })
     .from(titleLeft1, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft1, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft1, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -128,7 +141,7 @@ cardLeft1.addEventListener("mouseleave", () => {
 
 const TLANIM2 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM2.fromTo(
     imgZoom2,
     { scale: 1 },
@@ -140,7 +153,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
     }
   )
-    .to(blockContentRight2, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight2, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight2, { opacity: 1 })
     .from(titleRight2, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight2, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight2, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -156,7 +170,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
     }
   )
-    .to(blockContentRight2, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight2, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight2, { opacity: 1 })
     .from(titleRight2, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight2, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight2, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -174,7 +189,7 @@ cardRight2.addEventListener("mouseleave", () => {
 
 const TLANIM3 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM3.fromTo(
     imgZoom3,
     { scale: 1 },
@@ -186,7 +201,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft3, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft3, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft3, { opacity: 1 })
     .from(titleLeft3, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft3, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft3, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -202,7 +218,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft3, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft3, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft3, { opacity: 1 })
     .from(titleLeft3, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft3, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft3, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -220,7 +237,7 @@ cardLeft3.addEventListener("mouseleave", () => {
 
 const TLANIM4 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM4.fromTo(
     imgZoom4,
     { scale: 1 },
@@ -232,7 +249,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight4, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight4, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight4, { opacity: 1 })
     .from(titleRight4, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight4, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight4, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -248,7 +266,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight4, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight4, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight4, { opacity: 1 })
     .from(titleRight4, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight4, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight4, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -266,7 +285,7 @@ cardRight4.addEventListener("mouseleave", () => {
 
 const TLANIM5 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM5.fromTo(
     imgZoom5,
     { scale: 1 },
@@ -278,7 +297,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
     }
   )
-    .to(blockContentLeft5, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft5, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft5, { opacity: 1 })
     .from(titleLeft5, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft5, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft5, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -294,7 +314,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 1.5, "power2.inOut"),
     }
   )
-    .to(blockContentLeft5, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft5, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft5, { opacity: 1 })
     .from(titleLeft5, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft5, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft5, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -312,7 +333,7 @@ cardLeft5.addEventListener("mouseleave", () => {
 
 const TLANIM6 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM6.fromTo(
     imgZoom6,
     { scale: 1 },
@@ -324,7 +345,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight6, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight6, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight6, { opacity: 1 })
     .from(titleRight6, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight6, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight6, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -340,7 +362,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight6, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight6, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight6, { opacity: 1 })
     .from(titleRight6, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight6, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight6, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -358,7 +381,7 @@ cardRight6.addEventListener("mouseleave", () => {
 
 const TLANIM7 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM7.fromTo(
     imgZoom7,
     { scale: 1 },
@@ -370,7 +393,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft7, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft7, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft7, { opacity: 1 })
     .from(titleLeft7, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft7, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft7, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -386,7 +410,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft7, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft7, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft7, { opacity: 1 })
     .from(titleLeft7, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft7, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft7, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -404,7 +429,7 @@ cardLeft7.addEventListener("mouseleave", () => {
 
 const TLANIM8 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM8.fromTo(
     imgZoom8,
     { scale: 1 },
@@ -416,7 +441,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight8, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight8, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight8, { opacity: 1 })
     .from(titleRight8, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight8, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight8, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -432,7 +458,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight8, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight8, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight8, { opacity: 1 })
     .from(titleRight8, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight8, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight8, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -450,7 +477,7 @@ cardRight8.addEventListener("mouseleave", () => {
 
 const TLANIM9 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM9.fromTo(
     imgZoom9,
     { scale: 1 },
@@ -462,7 +489,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft9, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft9, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft9, { opacity: 1 })
     .from(titleLeft9, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft9, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft9, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -478,7 +506,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentLeft9, { left: 280, duration: 0.5 }, 0.5)
+    .to(blockContentLeft9, { left: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteLeft9, { opacity: 1 })
     .from(titleLeft9, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationLeft9, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtLeft9, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -496,7 +525,7 @@ cardLeft9.addEventListener("mouseleave", () => {
 
 const TLANIM10 = gsap.timeline({ paused: true });
 
-if ($(window).width() < 768) {
+if ($(window).width() < 1078) {
   TLANIM10.fromTo(
     imgZoom10,
     { scale: 1 },
@@ -508,7 +537,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight10, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight10, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight10, { opacity: 1 })
     .from(titleRight10, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight10, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight10, { opacity: 0, duration: 0.3, stagger: 0.2 });
@@ -524,7 +554,8 @@ if ($(window).width() < 768) {
       ease: ExpoScaleEase.config(1, 2, "power2.inOut"),
     }
   )
-    .to(blockContentRight10, { right: 280, duration: 0.5 }, 0.5)
+    .to(blockContentRight10, { right: 320, duration: 0.5 }, 0.5)
+    .from(titreVisiteRight10, { opacity: 1 })
     .from(titleRight10, { opacity: 0, duration: 0.5 }, "-=0.1")
     .from(separationRight10, { opacity: 0, duration: 1 }, "-=0.2")
     .from(allTxtRight10, { opacity: 0, duration: 0.3, stagger: 0.2 });
