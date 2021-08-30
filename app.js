@@ -9,28 +9,18 @@ setInterval(function () {
 
 AOS.init();
 $(function () {
-  $(".map").hover(function () {
-    $("#mapFrance").fadeOut(1000);
-    $("#mapBretagne").fadeIn(2000);
+  $("#FR-BRE").hover(function () {
+    $("#mapFrance").fadeOut(500);
+    $("#mapBretagne").delay(500).fadeIn(500);
   });
 });
 
 $(function () {
   $(".btnBackFranceMap").click(function () {
-    $("#mapBretagne").fadeOut();
-    $("#mapFrance").fadeIn(2000);
+    $("#mapBretagne").fadeOut(500);
+    $("#mapFrance").delay(500).fadeIn(500);
   });
 });
-/* map change France to Bretagne */
-
-// let dptFrance = document.getElementById("FR-BRE");
-// let franceMap = document.getElementById("mapFrance");
-// let bretagneMap = document.getElementById("mapBretagne");
-
-// dptFrance.addEventListener("mouseover", () => {
-//   franceMap.style.display = "none";
-//   bretagneMap.style.display = "block";
-// });
 
 // /* name dpt with mouse */
 
@@ -52,3 +42,9 @@ let f = function (a, b) {
 f(dptFinistere, textFinistere);
 f(dptArmor, textArmor);
 f(dptMorbihan, textMorbihan);
+
+$(document).ready(function () {
+  $(".hamburg").on("click", function () {
+    $("nav ul").toggleClass("menu");
+  });
+});
