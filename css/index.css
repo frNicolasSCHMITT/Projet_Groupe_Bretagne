@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgb(38, 41, 44);
 }
 
 img {
@@ -105,9 +106,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 10px 5px 5px #99ccff;
+  box-shadow: 10px 5px 5px black;
   border-radius: 10%;
-  background-color: #f0f0f0;
+  background-color: #e5f5fb;
   text-align: justify;
   z-index: -1;
 }
@@ -123,9 +124,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 10px 5px 5px #99ccff;
+  box-shadow: 10px 5px 5px black;
   border-radius: 10%;
-  background-color: #f0f0f0;
+  background-color: #e5f5fb;
   text-align: justify;
 }
 
@@ -136,9 +137,10 @@ img {
   width: 40%;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 5px 5px #99ccff;
+  align-items: center;
+  box-shadow: 10px 5px 5px black;
   border-radius: 10%;
-  background-color: #f0f0f0;
+  background-color: #e5f5fb;
   text-align: justify;
 }
 
@@ -175,22 +177,25 @@ img {
 
 /* map France */
 
-.map {
-  width: 40%;
-  /* height: 600px; */
+.mapFrance {
   margin: 5% auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+#FR-NOR,
+#FR-PDL {
+  fill: #ccefff;
+}
 #FR-BRE /*region bretagne*/ {
-  fill: #00b3b3;
+  fill: #3290bb;
 }
 
 .map svg {
+  height: 50vh;
   fill: white;
-  stroke: #333333;
-  stroke-width: 1px;
+  stroke: #a45ee5;
 }
 
 /* map Bretagne */
@@ -200,32 +205,94 @@ img {
 }
 
 .bretagne {
-  width: 40%;
-  height: 500px;
-  margin: 5% auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #cce6ff; */
   stroke: #333333;
+  margin: 5% auto;
+}
+
+.bretagne svg {
+  height: 50vh;
+  stroke: #a45ee5;
 }
 .ancienDpt {
-  fill: #d9d9d9;
+  fill: #ccefff;
 }
 
 .dptActuel {
-  fill: grey;
-}
-
-.dptActuel:hover {
-  fill: #66ccff;
+  fill: #3290bb;
 }
 
 text {
-  font-size: 16px;
-  fill: #66ccff;
+  font-size: 14px;
   stroke: black;
-  stroke-width: 1px;
-  font-family: Arial, Helvetica, sans-serif;
+  stroke-width: 0.2px;
+  fill: white;
   display: none;
+  text-decoration: underline;
+}
+
+/* btn retour map France */
+
+.btnBackFranceMap {
+  position: relative;
+  color: #e5f5fb;
+  z-index: 2;
+  padding: 0;
+}
+.returnBtn {
+  padding-right: 10px;
+}
+.btnBackFranceMap:hover {
+  border: none;
+}
+.btnBackFranceMap:before,
+.btnBackFranceMap:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btnBackFranceMap:before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #e5f5fb;
+  border-left-color: #e5f5fb;
+}
+.btnBackFranceMap:after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #e5f5fb;
+  border-right-color: #e5f5fb;
+}
+.btnBackFranceMap:hover:before,
+.btnBackFranceMap:hover:after {
+  border-color: #e5f5fb;
+  height: 100%;
+  width: 100%;
+}
+
+.btnBackFranceMap {
+  cursor: pointer;
+  background-color: transparent;
+  align-self: flex-end;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #e5f5fb;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }

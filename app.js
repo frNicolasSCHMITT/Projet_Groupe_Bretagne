@@ -8,19 +8,31 @@ setInterval(function () {
 }, 5000);
 
 AOS.init();
-
-/* map change France to Bretagne */
-
-let dptFrance = document.getElementById("FR-BRE");
-let franceMap = document.getElementById("mapFrance");
-let bretagneMap = document.getElementById("mapBretagne");
-
-dptFrance.addEventListener("mouseover", () => {
-  franceMap.style.display = "none";
-  bretagneMap.style.display = "block";
+$(function () {
+  $(".map").hover(function () {
+    $("#mapFrance").fadeOut(1000);
+    $("#mapBretagne").fadeIn(2000);
+  });
 });
 
-/* name dpt with mouse */
+$(function () {
+  $(".btnBackFranceMap").click(function () {
+    $("#mapBretagne").fadeOut();
+    $("#mapFrance").fadeIn(2000);
+  });
+});
+/* map change France to Bretagne */
+
+// let dptFrance = document.getElementById("FR-BRE");
+// let franceMap = document.getElementById("mapFrance");
+// let bretagneMap = document.getElementById("mapBretagne");
+
+// dptFrance.addEventListener("mouseover", () => {
+//   franceMap.style.display = "none";
+//   bretagneMap.style.display = "block";
+// });
+
+// /* name dpt with mouse */
 
 let dptFinistere = document.getElementById("FR-29-1");
 let dptArmor = document.getElementById("FR-22-1");
