@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  background-color: rgb(38, 41, 44);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*carousel accueil*/
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+  transition: 2s;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100%;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: blue;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+
+/*Informations générales acceuil*/
+
+.infosGenerales {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titreInfoGenerales {
+  font-size: 35px;
+  margin: 0;
+  padding-top: 3%;
+}
+
+.paraTextInfoGenerales {
+  margin: 1%;
+  line-height: 1.2;
+}
+
+.histoire {
+  margin-top: 3%;
+  padding: 1%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10%;
+  background-color: #e5f5fb;
+  text-align: justify;
+  z-index: -1;
+}
+.climatGeo {
+  z-index: -1;
+  display: flex;
+}
+.geographie {
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 1%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10%;
+  background-color: #e5f5fb;
+  text-align: justify;
+}
+
+.climat {
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 1%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10%;
+  background-color: #e5f5fb;
+  text-align: justify;
+}
+
+/* RESPONSIVE INFOS GENERALES */
+
+@media (max-width: 1078px) {
+  .histoire {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .histoire {
+    margin: 3% 0;
+    width: 80%;
+  }
+  .climatGeo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .geographie {
+    margin: 3% 0;
+    width: 80%;
+  }
+  .climat {
+    margin: 3% 0;
+    width: 80%;
+  }
+}
+
+/* MAPS */
+
+/* map France */
+
+.mapFrance {
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#FR-NOR,
+#FR-PDL {
+  fill: #ccefff;
+}
+#FR-BRE /*region bretagne*/ {
+  fill: #3290bb;
+}
+
+.map svg {
+  height: 50vh;
+  fill: white;
+  stroke: #a45ee5;
+}
+
+/* map Bretagne */
+
+.mapBretagne {
+  display: none;
+}
+
+.bretagne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: #333333;
+  margin: 5% auto;
+}
+
+.bretagne svg {
+  height: 50vh;
+  stroke: #a45ee5;
+}
+.ancienDpt {
+  fill: #ccefff;
+}
+
+.dptActuel {
+  fill: #3290bb;
+}
+
+text {
+  font-size: 14px;
+  stroke: black;
+  stroke-width: 0.2px;
+  fill: white;
+  display: none;
+  text-decoration: underline;
+}
+
+/* btn retour map France */
+
+.btnBackFranceMap {
+  position: relative;
+  color: #e5f5fb;
+  z-index: 2;
+  padding: 0;
+}
+.returnBtn {
+  padding-right: 10px;
+}
+.btnBackFranceMap:hover {
+  border: none;
+}
+.btnBackFranceMap:before,
+.btnBackFranceMap:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btnBackFranceMap:before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #e5f5fb;
+  border-left-color: #e5f5fb;
+}
+.btnBackFranceMap:after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #e5f5fb;
+  border-right-color: #e5f5fb;
+}
+.btnBackFranceMap:hover:before,
+.btnBackFranceMap:hover:after {
+  border-color: #e5f5fb;
+  height: 100%;
+  width: 100%;
+}
+
+.btnBackFranceMap {
+  cursor: pointer;
+  background-color: transparent;
+  align-self: flex-end;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #e5f5fb;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
