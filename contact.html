@@ -33,14 +33,14 @@
       </nav>
     </header>
     <section class="formContainer">
-      <form class="formulaire" action="/action_page.php">
+      <form class="formulaire" method="POST" action="./form.php">
         <img class="formLogo" src="./img/logo/favicon.png" alt="" />
-        <label class="labelTxt" for="lname">Nom:</label>
+        <label class="labelTxt" for="name">Nom:</label>
         <input
           class="inputObj"
           type="text"
           id="lname"
-          name="lname"
+          name="name"
           placeholder="Votre nom ici"
           required
         />
@@ -48,6 +48,7 @@
         <input
           class="inputObj"
           type="email"
+          name="email"
           placeholder="Votre adresse e-mail ici"
           required
         />
@@ -55,6 +56,7 @@
         <input
           class="inputObj"
           type="tel"
+          name="tel"
           pattern="[0-9]{10}"
           placeholder="Votre numéro (facultatif)"
         />
@@ -70,7 +72,7 @@
         <input class="formBtn" type="submit" value="Envoyer" />
       </form>
       <div class="blocSideForm">
-        <h2>Voulez-vous nous rejoindre?</h2>
+        <h2>Vous désirez vous renseigner directement?</h2>
         <h3>Offices du Tourisme principaux:</h3>
         <div class="fullBloc">
           <ul>
