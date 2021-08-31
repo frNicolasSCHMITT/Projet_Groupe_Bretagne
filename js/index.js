@@ -42,9 +42,3 @@ let f = function (a, b) {
 f(dptFinistere, textFinistere);
 f(dptArmor, textArmor);
 f(dptMorbihan, textMorbihan);
-
-$(document).ready(function () {
-  $(".hamburg").on("click", function () {
-    $("nav ul").toggleClass("menu");
-  });
-});

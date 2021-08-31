@@ -1,13 +1,3 @@
-body {
-  margin: 0;
-  background-color: rgb(38, 41, 44);
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
 /*carousel accueil*/
 
 .slider {
@@ -162,6 +152,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .geographie {
     margin: 3% 0;
