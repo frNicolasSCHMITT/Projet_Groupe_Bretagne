@@ -33,7 +33,12 @@
       </nav>
     </header>
     <section class="formContainer">
-      <form class="formulaire" method="POST" action="./form.php">
+      <form
+        id="basic-form"
+        class="formulaire"
+        method="POST"
+        action="./form.php"
+      >
         <img class="formLogo" src="./img/logo/favicon.png" alt="" />
         <label class="labelTxt" for="name">Nom:</label>
         <input
@@ -43,6 +48,7 @@
           name="name"
           placeholder="Votre nom ici"
           required
+          minlength="3"
         />
         <label class="labelTxt" for="email">E-mail:</label>
         <input
@@ -147,6 +153,13 @@
       </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+      integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/app.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

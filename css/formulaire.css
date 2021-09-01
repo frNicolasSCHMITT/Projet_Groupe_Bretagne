@@ -71,13 +71,25 @@
   font-size: 20px;
   padding: 2%;
 }
-.inputObj:invalid {
+/* .inputObj:invalid {
   border: red solid 3px;
   background-color: #ffdddd;
-}
+} */
 .inputObj:valid {
   border: green solid 3px;
-  background-color: #ddffdd;
+  /* background-color: #ddffdd; */
+}
+label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input.error {
+  border: 3px solid red;
+  font-weight: 300;
+  color: red;
 }
 .labelTxt {
   margin-bottom: 2%;
