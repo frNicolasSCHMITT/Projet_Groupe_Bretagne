@@ -28,7 +28,7 @@
     région,
   </li>
   <li>d'une page Marchés, répertoriant 6 marchés locaux,</li>
-  <li>d'une page Actualités, possédant 6 actualités régionnales insolites,</li>
+  <li>d'une page Actualités, possédant 6 actualités régionales insolites,</li>
   <li>
     d'une page Contact contenant les coordonnées des offices de tourisme
     principaux et un formulaire avec sa page de remerciement.
