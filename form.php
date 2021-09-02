@@ -16,7 +16,7 @@
     if(empty($errors)) {
         $to = $myemail;
         $email_subject = "Nouveau contact formulaire Bretagne de: $name";
-        $email_body = "<p style=\"font-size: 25px\">Vous avez reçu un nouveau message.</p><p style=\"font-size: 20px;\">Voici les détails :</p><br><p><strong><u>Nom</u> :</strong>$name</p><p><strong><u>E-mail</u> : </strong>$email_address</p><br><p><strong><u>Message</u> : </strong>$message</p>"
+        $email_body = "<p style=\"font-size: 25px\">Vous avez reçu un nouveau message.</p><p style=\"font-size: 20px;\">Voici les détails :</p><br><p><strong><u>Nom</u> :</strong>$name</p><p><strong><u>E-mail</u> : </strong>$email_address</p><br><p><strong><u>Message</u> : </strong>$message</p>";
 
         $header  = 'MIME-Version: 1.0' . "\r\n";
         $header .= 'Content-type: text/html; charset=utf-8' . "\r\n";
