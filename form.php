@@ -1,6 +1,6 @@
 <?php
     $errors = '';
-    $myemail = 'youremail@website.com';
+    $myemail = 'n.schmitt@codeur.online';
     if(
         empty($_POST['name']) ||
         empty($_POST['email']) ||
@@ -15,14 +15,15 @@
 
     if(empty($errors)) {
         $to = $myemail;
-        $email_subjet = "Contact form submission: $name";
-        $email_body = "You have received a new message. " .
-            " Here are the details:\n Name: $name \n Email: $email_address \n Message: $message";
+        $email_subject = "Nouveau contact formulaire Bretagne de: $name";
+        $email_body = "<p style=\"font-size: 25px\">Vous avez reçu un nouveau message.</p><p style=\"font-size: 20px;\">Voici les détails :</p><br><p><strong><u>Nom</u> :</strong>$name</p><p><strong><u>E-mail</u> : </strong>$email_address</p><br><p><strong><u>Message</u> : </strong>$message</p>"
 
-        $header = "From: $myemail\n";
+        $header  = 'MIME-Version: 1.0' . "\r\n";
+        $header .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        $header .= "From: $myemail\n";
         $header .= "Reply-To: $email_address";
 
-        mail($to, $email_subjet, $email_body, $header);
+        mail($to, $email_subject, $email_body, $header);
 
         //redirect to the "thank you" page
         header('location: contact_form_thank_you.html');
