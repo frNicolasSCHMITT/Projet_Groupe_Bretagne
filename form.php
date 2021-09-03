@@ -1,4 +1,5 @@
 <?php
+    include('connect.php');
     $errors = '';
     $myemail = 'n.schmitt@codeur.online';
     if(
@@ -25,7 +26,15 @@
 
         mail($to, $email_subject, $email_body, $header);
 
+        $query = "INSERT INTO `contact` (name, email, message) VALUES ('$name', '$email_address', '$message')";
+		$result = mysqli_query($connection, $query);
+
+        // var_dump($query);
+        // var_dump($result);
+        // die();
+
         //redirect to the "thank you" page
+        // sleep(5);
         header('location: contact_form_thank_you.html');
     }
 ?>
