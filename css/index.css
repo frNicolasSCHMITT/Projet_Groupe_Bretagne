@@ -146,6 +146,7 @@
   .histoire {
     margin: 3% 0;
     width: 80%;
+    border-radius: 20px;
   }
   .climatGeo {
     display: flex;
@@ -157,10 +158,12 @@
   .geographie {
     margin: 3% 0;
     width: 80%;
+    border-radius: 20px;
   }
   .climat {
     margin: 3% 0;
     width: 80%;
+    border-radius: 20px;
   }
 }
 

@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Bretagne tourisme voyage" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/thanks.css" />
+    <link rel="stylesheet" href="./css/table.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     />
     <link rel="icon" type="image/png" href="./img/logo/favicon.png" />
-    <title>Formulaire - La Bretagne</title>
+    <title>Tableau - La Bretagne</title>
   </head>
   <body>
     <header>
@@ -34,12 +38,10 @@
         </div>
       </nav>
     </header>
-    <section class="thanksSection">
-      <div class="thanksDiv">
-        <h2>Votre message est bien envoyé, merci!</h2>
-        <a href="./contact.html">Retour à la page contact</a>
-        <a href="./table.php">Tableau des données</a>
-      </div>
+    <section class="tableSection">
+    <?php
+      include('fetchTable.php');
+    ?>
     </section>
     <footer>
       <div class="social">
@@ -52,6 +54,8 @@
       </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+    <script src="./js/table.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
