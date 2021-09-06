@@ -40,8 +40,46 @@
     </header>
     <section class="tableSection">
     <?php
-      include('fetchTable.php');
+
+      $mysqli = new mysqli('localhost', 'root', '', 'contactform');
+
+      if ($mysqli->connect_errno) {
+        die('<p>Connexion impossible : '.$mysqli->connect_error.'</p>');
+    }
+
+    $result = $mysqli->query('SELECT * FROM contact;') ;
+
+    if (!$result) {
+        die('<p>ERREUR Requête invalide : '.$mysqli->error.'</p>');
+    }
     ?>
+    <table id="myTable" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Message</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php 
+            for ($i=0 ; $i < $result->num_rows ; $i++) {
+                    $row = $result->fetch_assoc() ;
+                    $name = $row['name'] ;
+                    $email = $row['email'];
+                    $message = $row['message'];
+                    $time = $row['time'];
+
+                    echo "<tr><td>$name</td><td>$email</td><td>$message</td><td>$time</td></tr>";
+                }
+                
+            $result->free() ;
+
+            $mysqli->close() ;
+        ?>
+        </tbody>
+    </table>
     </section>
     <footer>
       <div class="social">

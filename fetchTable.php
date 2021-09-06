@@ -6,8 +6,9 @@
 
   echo '<table id="myTable" class="display">';
   echo '<thead><tr><th>name</th><th>email</th><th>message</th><th>time</th></tr></thead>';
+  echo '<tbody>';
   while($row = mysqli_fetch_assoc($result)){
-    echo "<tbody><tr><td>{$row['name']}</td><td>{$row['email']}</td><td>{$row['message']}</td><td>{$row['time']}</td></tr></tbody>\n";
+    echo "<tr><td>{$row['name']}</td><td>{$row['email']}</td><td>{$row['message']}</td><td>{$row['time']}</td></tr>";
   }
-  echo "</table>";
+  echo "</tbody></table>";
 ?>
